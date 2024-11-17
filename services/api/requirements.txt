@@ -1,0 +1,17 @@
+fastapi>=0.109.0
+pydantic>=2.3
+pydantic-settings
+uvicorn[standard]
+motor
+PyMongo
+beautifulsoup4
+lxml
+openai
+sqlmodel
+psycopg2-binary
+klaviyo_api
+python-slugify
+python-dotenv
+pytest
+requests
+requests-html

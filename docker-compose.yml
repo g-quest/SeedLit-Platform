@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  postgres:
+    container_name: seedlit-postgres
+    build:
+      context: ./services/postgres/
+    ports:
+      - 5432:5432
+    healthcheck:
+      test: "pg_isready -h localhost -U postgres -d seedlit"
+      interval: 3s
+      timeout: 3s
+      retries: 30
+    volumes:
+      - ./services/postgres/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      - db-data:/var/lib/postgresql/data
+    labels:
+      - "project=seedlit"
+
+  api:
+    container_name: seedlit-api
+    depends_on:
+      postgres:
+        condition: service_healthy
+    build:
+      context: ./services/api/
+    ports:
+      - 3001:3001
+    volumes:
+      - ./services/api/app:/code/app
+      - ./services/api/assets:/code/assets
+      - ./services/api/static:/code/static
+    env_file:
+      - services/api/.env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    labels:
+      - "project=seedlit"
+
+  client:
+    container_name: seedlit-client
+    build:
+      context: ./services/client/
+      target: production
+    ports:
+      - 3000:3000
+    volumes:
+      - ./services/client/:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NEXT_TELEMETRY_DISABLED=1
+    env_file:
+      - services/client/.env
+    labels:
+      - "project=seedlit"
+
+volumes:
+  db-data:
+    labels:
+      - "project=seedlit"

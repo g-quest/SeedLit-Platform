@@ -1,0 +1,26 @@
+:root {
+  /* Primary Colors */
+  --sl-sprout-green: #6fcf97;
+  --sl-warm-peach: #f2994a;
+
+  /* Accent Colors */
+  --sl-leafy-green: #27ae60;
+  --sl-sunny-yellow: #f2c94c;
+
+  /* Neutral Colors */
+  --sl-soil-brown: #8d5524;
+  --sl-soft-cream: #f5f3f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
