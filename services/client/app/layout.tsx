@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import '@/styles/globals.css'
+import NavBar from '@/components/navigation/nav-bar'
 
 export const metadata: Metadata = {
   title: 'SeedLit',
@@ -30,8 +31,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>
-        <main>{children}</main>
+      <body className=" bg-background w-full max-w-[1200px] mx-auto">
+        <NavBar />
+        <main className="p-4 md:p-8 lg:p-12 bg-background">{children}</main>
       </body>
     </html>
   )

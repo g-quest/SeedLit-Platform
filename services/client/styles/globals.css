@@ -10,11 +10,11 @@ html {
   :root {
     --heading-font: 'Lilita One', Arial, Helvetica, sans-serif;
     --body-font: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    --background: hsl(0, 0%, 100%);
+    --background: hsl(30, 28%, 95%);
     --foreground: hsl(240, 10%, 3.9%);
-    --card: hsl(0, 0%, 100%);
+    --card: hsl(30, 28%, 95%);
     --card-foreground: hsl(240, 10%, 3.9%);
-    --popover: hsl(0, 0%, 100%);
+    --popover: hsl(30, 28%, 95%);
     --popover-foreground: hsl(240, 10%, 3.9%);
     --primary: hsl(142.1, 76.2%, 36.3%);
     --primary-foreground: hsl(355.7, 100%, 97.3%);

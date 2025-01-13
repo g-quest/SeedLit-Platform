@@ -1,7 +1,7 @@
 // 404
 
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/core-ui/button'
 
 export default function NotFound() {
   return (
