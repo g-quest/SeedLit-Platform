@@ -35,11 +35,11 @@ export default function Hero() {
       </div>
 
       {/* Overlay Content */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center min-h-[500px]">
         <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold drop-shadow-lg">
           Big Ideas, Little Minds
         </h1>
-        <p className="text-gray-200 text-md md:text-xl lg:text-3xl max-w-[300px] md:max-w-[400px] lg:max-w-[600px] pt-2 md:pt-4 drop-shadow-md">
+        <p className="text-gray-200 text-xl lg:text-3xl max-w-[400px] lg:max-w-[600px] pt-2 md:pt-4 drop-shadow-md">
           Timeless lessons through imaginative narratives for children.
         </p>
       </div>

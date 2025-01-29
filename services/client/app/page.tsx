@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      {/* <Introduction /> */}
+      <Introduction />
     </div>
   )
 }

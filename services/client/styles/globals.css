@@ -175,3 +175,16 @@ html {
     animation-delay: 16s;
   }
 }
+
+.image-scale {
+  transform: scale(0.8);
+  opacity: 0;
+  transition:
+    transform 1s ease-out,
+    opacity 1s ease-out;
+}
+
+.image-scale.in-view {
+  transform: scale(1);
+  opacity: 1;
+}

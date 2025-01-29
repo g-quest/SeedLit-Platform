@@ -1,15 +1,7 @@
-export default function Section({
-  children,
-  background = 'bg-white',
-}: {
-  children: React.ReactNode
-  background?: string
-}) {
+export default function Section({ children }: { children: React.ReactNode }) {
   return (
-    <div
-      className={`mb-8 flex flex-col items-center justify-center ${background} py-12 px-4 rounded-2xl`}
-    >
-      {children}
+    <div className={`flex flex-col items-center justify-center py-12 px-4`}>
+      <div className="max-w-7xl">{children}</div>
     </div>
   )
 }
