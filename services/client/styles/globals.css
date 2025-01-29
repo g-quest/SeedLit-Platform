@@ -137,8 +137,41 @@ html {
   }
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .hero-slide {
+    animation: fade 12s infinite;
+  }
+  .hero-slide1 {
+    animation-delay: 0s;
+  }
+  .hero-slide2 {
+    animation-delay: 4s;
+  }
+  .hero-slide3 {
+    animation-delay: 8s;
+  }
+  .hero-slide4 {
+    animation-delay: 12s;
+  }
+  .hero-slide5 {
+    animation-delay: 16s;
   }
 }

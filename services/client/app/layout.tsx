@@ -31,9 +31,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className=" bg-background w-full max-w-[1200px] mx-auto">
+      <body className="bg-background">
         <NavBar />
-        <main className="p-4 md:p-8 lg:p-12 bg-background">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   )
