@@ -6,7 +6,7 @@ export default function HomeStorytelling() {
       {/* Left Side: Sticky Image (Only Sticky on Desktop) */}
       <div className="w-full md:w-1/2 md:h-screen sticky md:top-0 flex items-center justify-center bg-gray-100">
         <Image
-          src="/images/generated/castle-market.webp"
+          src="/images/generated/underwater-city.webp"
           alt="Storytelling Illustration"
           className="w-full h-auto md:h-full object-cover"
           width={2000}
@@ -34,7 +34,7 @@ export default function HomeStorytelling() {
                 Multi-Source Inspiration
               </h3>
               <div>
-                <ul className="list-disc text-lg">
+                <ul className="list-disc text-lg pl-6">
                   <li>
                     <p>
                       <strong>Impactful Adult Literature:</strong> SeedLit

@@ -6,10 +6,9 @@ import Image from 'next/image'
 export default function HomeHero() {
   const slides = [
     '/images/generated/castle-town.webp',
-    '/images/generated/robot-city.webp',
-    '/images/generated/enchanted-forest.webp',
+    '/images/generated/bug-village.webp',
     '/images/generated/ancient-asian-city.webp',
-    '/images/generated/underwater-city.webp',
+    '/images/generated/enchanted-forest.webp',
   ]
 
   const [currentSlide, setCurrentSlide] = useState(0)
