@@ -29,7 +29,7 @@ export default function HomeIntroduction() {
 
   return (
     <Section>
-      <div className="rounded-2xl bg-white mx-auto lg:max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 lg:items-center lg:justify-center py-[3.25rem] lg:py-[6.25rem] gap-10 lg:gap-0">
+      <div className="rounded-2xl bg-white mx-auto lg:max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 lg:items-center lg:justify-center py-[3.25rem] lg:py-[6.25rem] gap-10 lg:gap-0 lg:mt-[100px]">
         <div
           ref={imageRef}
           className="mx-auto order-2 lg:order-1 relative animate-scale"

@@ -30,7 +30,7 @@ export default function HomeFeatures() {
 
   return (
     <Section>
-      <div className="lg:max-w-[1200px] px-5 lg:px-10 py-[3.25rem] lg:py-[6.25rem]">
+      <div className="lg:max-w-[1200px] px-5 lg:px-10 pt-0 pb-[4rem] lg:pt-[0rem] lg:pb-[8rem]">
         <h2 className="text-center mb-8 md:mb-[3.125rem]">
           More Than Stories: A Platform for Growth
         </h2>
