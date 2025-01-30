@@ -72,11 +72,11 @@ export default function HomeCompanionApp() {
       </div>
 
       {/* Right Side: Sticky Image (Only Sticky on Desktop) */}
-      <div className="w-full md:w-1/2 md:h-screen sticky md:top-0 flex items-center justify-center bg-gray-100">
+      <div className="w-full md:w-1/2 md:h-screen sticky md:top-0 flex items-center justify-center bg-gray-100 overflow-hidden">
         <Image
           src="/images/generated/robot-city.webp"
           alt="Storytelling Illustration"
-          className="w-full h-auto md:h-full object-cover"
+          className="w-full h-auto md:h-full object-cover animate-zoom"
           width={2000}
           height={2000}
         />
