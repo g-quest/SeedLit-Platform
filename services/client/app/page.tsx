@@ -1,10 +1,13 @@
-import Hero from '@/components/home/Hero'
-import Introduction from '@/components/home/Introduction'
+import HomeHero from '@/components/home/Hero'
+import HomeIntroduction from '@/components/home/Introduction'
+import HomeFeatures from '@/components/home/Features'
+
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <Introduction />
+      <HomeHero />
+      <HomeIntroduction />
+      <HomeFeatures />
     </div>
   )
 }

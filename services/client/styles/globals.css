@@ -16,10 +16,18 @@ html {
     --card-foreground: hsl(240, 10%, 3.9%);
     --popover: hsl(30, 28%, 95%);
     --popover-foreground: hsl(240, 10%, 3.9%);
-    --primary: hsl(142.1, 76.2%, 36.3%);
+    --primary: hsl(144, 47%, 65%);
     --primary-foreground: hsl(355.7, 100%, 97.3%);
-    --secondary: hsl(240, 4.8%, 95.9%);
+    --secondary: hsl(28, 89%, 64%);
     --secondary-foreground: hsl(240, 5.9%, 10%);
+    --tertiary: hsl(145, 63%, 41%);
+    --tertiary-foreground: hsl(355.7, 100%, 97.3%);
+    --quaternary: hsl(45, 86%, 63%);
+    --quaternary-foreground: hsl(240, 5.9%, 10%);
+    --neutral: hsl(25, 58%, 35%);
+    --neutral-foreground: hsl(355.7, 100%, 97.3%);
+    --neutral-secondary: hsl(30, 28%, 95%);
+    --neutral-secondary-foreground: hsl(240, 10%, 3.9%);
     --muted: hsl(240, 4.8%, 95.9%);
     --muted-foreground: hsl(240, 3.8%, 46.1%);
     --accent: hsl(240, 4.8%, 95.9%);
@@ -28,26 +36,13 @@ html {
     --destructive-foreground: hsl(0, 0%, 98%);
     --border: hsl(240, 5.9%, 90%);
     --input: hsl(240, 5.9%, 90%);
-    --ring: hsl(142.1, 76.2%, 36.3%);
+    --ring: hsl(144, 47%, 65%);
     --radius: 0.5rem;
     --chart-1: hsl(12, 76%, 61%);
     --chart-2: hsl(173, 58%, 39%);
     --chart-3: hsl(197, 37%, 24%);
     --chart-4: hsl(43, 74%, 66%);
     --chart-5: hsl(27, 87%, 67%);
-
-    /* TODO: Replace the above with the following where appropriate */
-    /* Primary Colors */
-    --sprout-green: hsl(144, 47%, 65%);
-    --warm-peach: hsl(28, 89%, 64%);
-
-    /* Accent Colors */
-    --leafy-green: hsl(145, 63%, 41%);
-    --sunny-yellow: hsl(45, 86%, 63%);
-
-    /* Neutral Colors */
-    --soil-brown: hsl(25, 58%, 35%);
-    --soft-cream: hsl(30, 28%, 95%);
   }
 
   .dark {
@@ -59,10 +54,18 @@ html {
     --card-foreground: hsl(0, 0%, 95%);
     --popover: hsl(0, 0%, 9%);
     --popover-foreground: hsl(0, 0%, 95%);
-    --primary: hsl(142.1, 70.6%, 45.3%);
-    --primary-foreground: hsl(144.9, 80.4%, 10%);
-    --secondary: hsl(240, 3.7%, 15.9%);
-    --secondary-foreground: hsl(0, 0%, 98%);
+    --primary: hsl(144, 47%, 65%);
+    --primary-foreground: hsl(355.7, 100%, 97.3%);
+    --secondary: hsl(28, 89%, 64%);
+    --secondary-foreground: hsl(240, 5.9%, 10%);
+    --tertiary: hsl(145, 63%, 41%);
+    --tertiary-foreground: hsl(355.7, 100%, 97.3%);
+    --quaternary: hsl(45, 86%, 63%);
+    --quaternary-foreground: hsl(240, 5.9%, 10%);
+    --neutral: hsl(25, 58%, 35%);
+    --neutral-foreground: hsl(355.7, 100%, 97.3%);
+    --neutral-secondary: hsl(30, 28%, 95%);
+    --neutral-secondary-foreground: hsl(240, 10%, 3.9%);
     --muted: hsl(0, 0%, 15%);
     --muted-foreground: hsl(240, 5%, 64.9%);
     --accent: hsl(12, 6.5%, 15.1%);
@@ -77,19 +80,6 @@ html {
     --chart-3: hsl(30, 80%, 55%);
     --chart-4: hsl(280, 65%, 60%);
     --chart-5: hsl(340, 75%, 55%);
-
-    /* TODO: Replace the above with the following where appropriate */
-    /* Primary Colors */
-    --sprout-green: hsl(144, 47%, 65%);
-    --warm-peach: hsl(28, 89%, 64%);
-
-    /* Accent Colors */
-    --leafy-green: hsl(145, 63%, 41%);
-    --sunny-yellow: hsl(45, 86%, 63%);
-
-    /* Neutral Colors */
-    --soil-brown: hsl(25, 58%, 35%);
-    --soft-cream: hsl(30, 28%, 95%);
   }
 
   h1,
@@ -141,13 +131,13 @@ html {
   0% {
     opacity: 0;
   }
-  10% {
+  20% {
     opacity: 1;
   }
   40% {
     opacity: 1;
   }
-  50% {
+  60% {
     opacity: 0;
   }
   100% {
@@ -155,28 +145,7 @@ html {
   }
 }
 
-@layer utilities {
-  .hero-slide {
-    animation: fade 12s infinite;
-  }
-  .hero-slide1 {
-    animation-delay: 0s;
-  }
-  .hero-slide2 {
-    animation-delay: 4s;
-  }
-  .hero-slide3 {
-    animation-delay: 8s;
-  }
-  .hero-slide4 {
-    animation-delay: 12s;
-  }
-  .hero-slide5 {
-    animation-delay: 16s;
-  }
-}
-
-.image-scale {
+.animate-scale {
   transform: scale(0.8);
   opacity: 0;
   transition:
@@ -184,7 +153,7 @@ html {
     opacity 1s ease-out;
 }
 
-.image-scale.in-view {
+.animate-scale.in-view {
   transform: scale(1);
   opacity: 1;
 }

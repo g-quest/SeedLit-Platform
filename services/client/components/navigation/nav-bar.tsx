@@ -17,14 +17,14 @@ export default function NavBar() {
     <div className="bg-transparent p-4 border-b border-border absolute top-0 z-50 w-full">
       <div className="max-w-[1200px] mx-auto flex w-full justify-between items-center">
         <div className="logo">
-          <h4 className="text-3xl font-bold text-primary">SeedLit</h4>
+          <h4 className="text-3xl font-bold text-tertiary">SeedLit</h4>
         </div>
         <NavigationMenu>
           <NavigationMenuList className="flex space-x-4">
             <NavigationMenuItem>
               <NavigationMenuLink href="/parents">
                 <p
-                  className={`text-lg ${isHomePage ? 'text-secondary' : 'text-black'}`}
+                  className={`text-lg ${isHomePage ? 'text-white' : 'text-black'}`}
                 >
                   Parents
                 </p>
@@ -33,7 +33,7 @@ export default function NavBar() {
             <NavigationMenuItem>
               <NavigationMenuLink href="/blog">
                 <p
-                  className={`text-lg ${isHomePage ? 'text-secondary' : 'text-black'}`}
+                  className={`text-lg ${isHomePage ? 'text-white' : 'text-black'}`}
                 >
                   Blog
                 </p>
@@ -42,7 +42,7 @@ export default function NavBar() {
             <NavigationMenuItem>
               <NavigationMenuLink href="/about">
                 <p
-                  className={`text-lg ${isHomePage ? 'text-secondary' : 'text-black'}`}
+                  className={`text-lg ${isHomePage ? 'text-white' : 'text-black'}`}
                 >
                   About
                 </p>

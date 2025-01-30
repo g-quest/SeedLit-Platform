@@ -1,25 +1,26 @@
-export default function Hero() {
+'use client'
+
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
+
+export default function HomeHero() {
   const slides = [
-    {
-      image: '/images/generated/castle-town.webp',
-      animation: 'hero-slide1',
-    },
-    { image: '/images/generated/robot-city.webp', animation: 'hero-slide2' },
-    {
-      image: '/images/generated/enchanted-forest.webp',
-      animation: 'hero-slide3',
-    },
-    {
-      image: '/images/generated/ancient-asian-city.webp',
-      animation: 'hero-slide4',
-    },
-    {
-      image: '/images/generated/underwater-city.webp',
-      animation: 'hero-slide5',
-    },
+    '/images/generated/castle-town.webp',
+    '/images/generated/robot-city.webp',
+    '/images/generated/enchanted-forest.webp',
+    '/images/generated/ancient-asian-city.webp',
+    '/images/generated/underwater-city.webp',
   ]
 
-  const slideStyle = 'absolute inset-0 bg-cover bg-center opacity-0 hero-slide'
+  const [currentSlide, setCurrentSlide] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length)
+    }, 4000) // Change slide every 4 seconds
+
+    return () => clearInterval(interval)
+  }, [slides.length])
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
@@ -28,8 +29,13 @@ export default function Hero() {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`${slideStyle} ${slide.animation}`}
-            style={{ backgroundImage: `url('${slide.image}')` }}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              backgroundImage: `url('${slide}')`,
+              transition: 'opacity 1s ease-in-out', // Ensure transition is applied
+            }}
           ></div>
         ))}
       </div>

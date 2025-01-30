@@ -34,6 +34,22 @@ const config: Config = {
           DEFAULT: 'var(--secondary)',
           foreground: 'var(--secondary-foreground)',
         },
+        tertiary: {
+          DEFAULT: 'var(--tertiary)',
+          foreground: 'var(--tertiary-foreground)',
+        },
+        quaternary: {
+          DEFAULT: 'var(--quaternary)',
+          foreground: 'var(--quaternary-foreground)',
+        },
+        neutral: {
+          DEFAULT: 'var(--neutral)',
+          foreground: 'var(--neutral-foreground)',
+        },
+        neutralSecondary: {
+          DEFAULT: 'var(--neutral-secondary)',
+          foreground: 'var(--neutral-secondary-foreground)',
+        },
         muted: {
           DEFAULT: 'var(--muted)',
           foreground: 'var(--muted-foreground)',
