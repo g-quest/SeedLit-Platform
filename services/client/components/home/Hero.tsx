@@ -16,7 +16,7 @@ export default function HomeHero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length)
-    }, 4000) // Change slide every 4 seconds
+    }, 3000) // Change slide every 3 seconds
 
     return () => clearInterval(interval)
   }, [slides.length])

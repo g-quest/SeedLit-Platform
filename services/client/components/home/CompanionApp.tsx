@@ -1,6 +1,31 @@
+'use client'
+
 import Image from 'next/image'
+import { useRef, useEffect } from 'react'
 
 export default function HomeCompanionApp() {
+  const imageRef = useRef<HTMLImageElement>(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (imageRef.current) {
+        const rect = imageRef.current.getBoundingClientRect()
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          imageRef.current.classList.add('in-view')
+        } else {
+          imageRef.current.classList.remove('in-view')
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll() // Initial check
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <div className="bg-white relative flex flex-col-reverse md:flex-row w-full h-auto min-h-screen">
       {/* Left Side: Scrolling Text (Full View on Mobile) */}
@@ -79,6 +104,7 @@ export default function HomeCompanionApp() {
           className="w-full h-auto md:h-full object-cover animate-zoom"
           width={2000}
           height={2000}
+          ref={imageRef}
         />
       </div>
     </div>

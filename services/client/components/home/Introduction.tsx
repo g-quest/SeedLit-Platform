@@ -14,7 +14,7 @@ export default function HomeIntroduction() {
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
           imageRef.current.classList.add('in-view')
         } else {
-          imageRef.current.classList.remove('in-view')
+          // imageRef.current.classList.remove('in-view')
         }
       }
     }

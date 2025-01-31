@@ -14,7 +14,7 @@ export default function HomeFeatures() {
           if (rect.top < window.innerHeight && rect.bottom >= 0) {
             ref.classList.add('in-view')
           } else {
-            ref.classList.remove('in-view')
+            // ref.classList.remove('in-view')
           }
         }
       })
