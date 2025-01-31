@@ -42,7 +42,7 @@ export default function HomeStorytelling() {
 
       {/* Right Side: Scrolling Text (Full View on Mobile) */}
       <div className="w-full md:w-1/2 px-6 md:px-8 py-12 md:py-16 space-y-8  flex flex-col justify-center items-center">
-        <div className="max-w-[500px]">
+        <div className="max-w-[550px] border border-slate-200 p-4 rounded-2xl shadow-gray-300 shadow-xl">
           <h2 className="mb-5 lg:mb-10 text-center">
             Transforming Big Ideas into Magical Stories
           </h2>
