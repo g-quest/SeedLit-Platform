@@ -16,7 +16,7 @@ export default function HomeHero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length)
-    }, 3000) // Change slide every 3 seconds
+    }, 2500) // Change slide every 2.5 seconds
 
     return () => clearInterval(interval)
   }, [slides.length])
@@ -41,7 +41,7 @@ export default function HomeHero() {
 
       {/* Overlay Content */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center min-h-[500px]">
-        <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold drop-shadow-lg">
+        <h1 className="text-white text-6xl lg:text-8xl font-bold drop-shadow-lg">
           Big Ideas, Little Minds
         </h1>
         <p className="text-gray-200 text-xl lg:text-3xl max-w-[400px] lg:max-w-[600px] pt-2 md:pt-4 drop-shadow-md">

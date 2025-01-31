@@ -20,13 +20,13 @@ export default function NavBar() {
           <h4 className="text-3xl font-bold text-tertiary">SeedLit</h4>
         </div>
         <NavigationMenu>
-          <NavigationMenuList className="flex space-x-4">
+          <NavigationMenuList className="flex space-x-8">
             <NavigationMenuItem>
-              <NavigationMenuLink href="/parents">
+              <NavigationMenuLink href="/parents-hub">
                 <p
                   className={`text-lg ${isHomePage ? 'text-white' : 'text-black'}`}
                 >
-                  Parents
+                  Parents Hub
                 </p>
               </NavigationMenuLink>
             </NavigationMenuItem>

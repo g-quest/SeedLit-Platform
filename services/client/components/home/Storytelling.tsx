@@ -41,26 +41,23 @@ export default function HomeStorytelling() {
       </div>
 
       {/* Right Side: Scrolling Text (Full View on Mobile) */}
-      <div className="w-full md:w-1/2 px-6 md:px-8 py-12 md:py-16 space-y-8  flex flex-col justify-center items-center">
-        <div className="max-w-[550px] border border-slate-200 p-4 rounded-2xl shadow-gray-300 shadow-xl">
-          <h2 className="mb-5 lg:mb-10 text-center">
+      <div className="w-full md:w-1/2 px-6 md:px-8 py-12 md:py-16 space-y-8 flex flex-col justify-center items-center">
+        <div className="max-w-[550px]">
+          <h2 className="mb-6 text-center">
             Transforming Big Ideas into Magical Stories
           </h2>
-          <p className="text-lg text-gray-700 mb-5 lg:mb-10 text-center">
+          <p className="text-lg text-gray-700 mb-5 text-center">
             SeedLit transforms impactful lessons into imaginative,
             age-appropriate stories for children. These stories are designed to
             nurture curiosity, resilience, and empathy, making complex ideas
             approachable and fun for young minds.
           </p>
-
           {/* Key Points */}
-          <div className="space-y-12">
+          <div className="space-y-12 text-center mx-auto border border-slate-200 p-8 rounded-2xl shadow-gray-300 shadow-lg">
             <div>
-              <h3 className="mb-5 text-center text-tertiary">
-                Multi-Source Inspiration
-              </h3>
+              <h3 className="mb-5 text-tertiary">Multi-Source Inspiration</h3>
               <div>
-                <ul className="list-disc text-lg pl-6">
+                <ul className="list-disc pl-6 text-left">
                   <li>
                     <p>
                       <strong>Impactful Adult Literature:</strong> SeedLit
@@ -71,8 +68,8 @@ export default function HomeStorytelling() {
                   <li>
                     <p>
                       <strong>Parent Experiences:</strong> Stories inspired by
-                      real-world parenting insights shared through the Parent
-                      Insights Hub.
+                      real-world parenting insights shared through the Parents
+                      Hub.
                     </p>
                   </li>
                   <li>
@@ -87,11 +84,9 @@ export default function HomeStorytelling() {
             </div>
 
             <div>
-              <h3 className="mb-5 text-center text-tertiary">
-                Engaging & Relatable
-              </h3>
+              <h3 className="mb-5 text-tertiary">Engaging & Relatable</h3>
               <div>
-                <p className="text-lg text-center">
+                <p>
                   Every story is written to captivate children while providing
                   discussion prompts and context for parents, helping them guide
                   meaningful conversations.
@@ -100,17 +95,19 @@ export default function HomeStorytelling() {
             </div>
 
             <div>
-              <h3 className="mb-5 text-center text-tertiary">
-                Playful & Accessible
-              </h3>
+              <h3 className="mb-5 text-tertiary">Playful & Accessible</h3>
               <div>
-                <p className="text-lg text-center">
+                <p>
                   Big ideas are presented in ways that resonate with children's
                   experiences, sparking their natural curiosity and sense of
                   wonder.
                 </p>
               </div>
             </div>
+          </div>
+          <div className="text-lg font-bold text-center mt-10 bg-secondary text-white p-4 rounded-2xl w-[350px] mx-auto">
+            <p>First set of stories coming soon.</p>
+            <p>Stay tuned!</p>
           </div>
         </div>
       </div>

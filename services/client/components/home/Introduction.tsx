@@ -29,28 +29,25 @@ export default function HomeIntroduction() {
 
   return (
     <Section>
-      <div className="rounded-2xl bg-white mx-auto lg:max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 lg:items-center lg:justify-center py-[3.25rem] lg:py-[6.25rem] gap-10 lg:gap-0 lg:mt-[100px] border border-slate-200 shadow-gray-300 shadow-lg">
+      <div className="rounded-2xl bg-white mx-auto lg:max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 lg:items-center lg:justify-center py-[3.25rem] lg:py-[6.25rem] gap-10 lg:gap-2 lg:mt-[100px] border border-slate-200 shadow-gray-300 shadow-lg md:px-6">
         <div
           ref={imageRef}
-          className="mx-auto order-2 lg:order-1 relative animate-scale"
+          className="mx-auto order-2 lg:order-1 relative animate-scale "
         >
-          <div className="bg-secondary w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-2xl" />
+          <div className="bg-secondary w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-2xl -translate-x-[0.5rem]" />
           <Image
             src="/images/generated/fam-4.webp"
             alt="SeedLit"
             width={400}
             height={400}
-            className="rounded-2xl absolute w-[300px] h-[300px] top-[15px] left-[15px] lg:w-[400px] lg:h-[400px] lg:top-[25px] lg:left-[25px] shadow-2xl "
+            className="rounded-2xl absolute w-[300px] h-[300px] top-[15px] left-[15px] lg:w-[400px] lg:h-[400px] lg:top-[25px] lg:left-[25px] shadow-2xl -translate-x-[0.5rem]"
           />
         </div>
         <div className="text-center lg:text-left mx-auto order-1 lg:order-2 px-4 md:px-0">
           <h2 className="mb-5 lg:mb-10">A New Kind of Storytelling</h2>
           <p className="text-xl max-w-[500px] lg:max-w-none lg:text-2xl ">
-            <span className="text-tertiary font-bold font-heading text-3xl">
-              SeedLit{' '}
-            </span>
-            transforms big ideas into imaginative, age-appropriate narratives
-            that spark meaningful conversations between parents and children.
+            SeedLit transforms big ideas into imaginative, narratives that spark
+            meaningful conversations between parents and children.
           </p>
         </div>
       </div>
