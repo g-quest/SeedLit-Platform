@@ -52,7 +52,7 @@ const Footer = () => {
             <form className="mt-4 flex gap-2">
               <Input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="name@email.com"
                 className="bg-white text-gray-900 rounded-l-lg"
               />
               <Button className="bg-tertiary rounded-r-lg">Subscribe</Button>
