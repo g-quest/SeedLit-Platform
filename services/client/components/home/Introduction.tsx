@@ -46,7 +46,7 @@ export default function HomeIntroduction() {
         <div className="text-center lg:text-left mx-auto order-1 lg:order-2 px-4 md:px-0">
           <h2 className="mb-5 lg:mb-10">A New Kind of Storytelling</h2>
           <p className="text-xl max-w-[500px] lg:max-w-none lg:text-2xl ">
-            SeedLit transforms big ideas into imaginative, narratives that spark
+            SeedLit transforms big ideas into imaginative narratives that spark
             meaningful conversations between parents and children.
           </p>
         </div>

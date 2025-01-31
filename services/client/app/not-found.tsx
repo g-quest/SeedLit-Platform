@@ -11,9 +11,9 @@ export default function NotFound() {
         <p className="pt-2 pb-4">
           Oops! You stumbled upon a page that doesn't exist.
         </p>
-        <Link href="/">
-          <Button>Return Home</Button>
-        </Link>
+        <Button asChild>
+          <Link href="/">Return Home</Link>
+        </Button>
       </div>
     </div>
   )

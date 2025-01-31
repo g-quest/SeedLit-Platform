@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import '@/styles/globals.css'
 import NavBar from '@/components/navigation/nav-bar'
+import Footer from '@/components/navigation/footer'
 
 export const metadata: Metadata = {
   title: 'SeedLit',
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className="bg-background">
         <NavBar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
