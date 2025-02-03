@@ -24,7 +24,7 @@ export default function NavBar() {
         </div>
         <NavigationMenu>
           <NavigationMenuList className="flex space-x-8">
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <NavigationMenuLink href="/parents-hub">
                 <p
                   className={`text-lg ${makeWhite ? 'text-white' : 'text-black'}`}
@@ -32,8 +32,8 @@ export default function NavBar() {
                   Parents Hub
                 </p>
               </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
+            </NavigationMenuItem> */}
+            {/* <NavigationMenuItem>
               <NavigationMenuLink href="/blog">
                 <p
                   className={`text-lg ${makeWhite ? 'text-white' : 'text-black'}`}
@@ -41,7 +41,7 @@ export default function NavBar() {
                   Blog
                 </p>
               </NavigationMenuLink>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
             <NavigationMenuItem>
               <NavigationMenuLink href="/about">
                 <p

@@ -5,9 +5,9 @@ from app.core.config import settings
 from sqlmodel import Session
 from app.core.db import engine, init_db
 
-# from app.routes import (
-#     data_load,
-# )
+from app.routes import (
+    email,
+)
 
 # with Session(engine) as session:
 #     init_db(session)
@@ -26,7 +26,7 @@ app.add_middleware(
 
 
 api_router = APIRouter()
-# api_router.include_router(data_load.router, prefix="/data-load", tags=["Data Loaders"])
+api_router.include_router(email.router, prefix="/email", tags=["Email"])
 
 app.include_router(api_router, prefix="/v1")
 app.mount("/static", StaticFiles(directory="static"), name="static")

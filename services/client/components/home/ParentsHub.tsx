@@ -89,11 +89,11 @@ export default function HomeParentsHub() {
             </div>
           ))}
         </div>
-        <div className="flex justify-center mt-10">
+        {/* <div className="flex justify-center mt-10">
           <Button className="bg-tertiary" asChild>
             <Link href="/parents-hub">Explore the Hub!</Link>
           </Button>
-        </div>
+        </div> */}
       </div>
     </Section>
   )

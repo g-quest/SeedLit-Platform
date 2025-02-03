@@ -88,10 +88,6 @@ export default function HomeCompanionApp() {
             </div>
           </div>
         </div>
-        <div className="text-lg font-bold text-center mt-10 bg-secondary text-white p-4 rounded-2xl w-[350px] mx-auto">
-          <p>Available later this year.</p>
-          <p>Stay tuned!</p>
-        </div>
       </div>
 
       {/* Right Side: Sticky Image (Only Sticky on Desktop) */}

@@ -105,10 +105,6 @@ export default function HomeStorytelling() {
               </div>
             </div>
           </div>
-          <div className="text-lg font-bold text-center mt-10 bg-secondary text-white p-4 rounded-2xl w-[350px] mx-auto">
-            <p>First set of stories coming soon.</p>
-            <p>Stay tuned!</p>
-          </div>
         </div>
       </div>
     </div>

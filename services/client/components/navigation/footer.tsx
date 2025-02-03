@@ -6,8 +6,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* About and Navigation */}
+      {/* <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h3 className="text-xl font-semibold">🌱 SeedLit</h3>
           <p className="text-gray-400 mt-2">
@@ -41,7 +40,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter & Contact */}
         <div className="flex flex-col gap-8 md:justify-between">
           <div>
             <h3 className="text-xl font-semibold"> 📥 Stay Connected</h3>
@@ -71,10 +69,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      {/* Copyright */}
-      <Separator className="bg-gray-700 my-8" />
+      {/* <Separator className="bg-gray-700 my-8" /> */}
       <p className="text-center text-gray-500 text-sm mb-4">For Cora ❤️</p>
       <p className="text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} SeedLit, a subsidiary of Questa
