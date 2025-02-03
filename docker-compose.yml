@@ -29,8 +29,6 @@ services:
       - 3001:3001
     volumes:
       - ./services/api/app:/code/app
-      - ./services/api/assets:/code/assets
-      - ./services/api/static:/code/static
     env_file:
       - services/api/.env
     extra_hosts:

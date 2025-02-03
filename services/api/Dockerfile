@@ -4,8 +4,6 @@ WORKDIR /code
 COPY ./requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./app /code/app
-COPY ./assets /code/assets
-COPY ./static /code/static
 
 # This line is essential if you want your app to auto restart after every change
 # https://github.com/encode/uvicorn/discussions/1893
