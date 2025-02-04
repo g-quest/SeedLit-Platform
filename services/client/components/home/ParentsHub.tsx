@@ -60,7 +60,7 @@ export default function HomeParentsHub() {
               ref={(el) => {
                 cardRefs.current[index] = el
               }}
-              className="bg-white relative animate-scale shadow-lg max-w-[350px] md:max-w-full mx-auto"
+              className="bg-white relative animate-scale shadow-lg max-w-[350px] md:max-w-full mx-auto rounded-tl-xl rounded-tr-xl"
             >
               <div className="relative">
                 <Image
@@ -75,7 +75,7 @@ export default function HomeParentsHub() {
                 </h3>
                 <div className="absolute inset-0 bg-black bg-opacity-40 z-5 rounded-tl-xl rounded-tr-xl" />
               </div>
-              <div className="p-6 rounded-bl-xl rounded-br-xl text-center">
+              <div className="p-6 text-center">
                 <p>
                   {index === 0
                     ? 'Contribute to a collective library of insights, fostering connection and support.'
