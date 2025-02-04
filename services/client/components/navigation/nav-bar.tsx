@@ -41,7 +41,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`py-2 px-4 md:p-4 border-b border-border fixed top-0 z-50 w-full transition-all duration-300 ${backgroundColor}`}
+      className={`p-4 border-b border-border fixed top-0 z-50 w-full transition-all duration-300 ${backgroundColor}`}
     >
       <div className="max-w-[1200px] mx-auto flex w-full justify-between items-center">
         <div className="logo">
@@ -50,7 +50,7 @@ export default function NavBar() {
           </Link>
         </div>
         <NavigationMenu>
-          <NavigationMenuList className="flex space-x-8">
+          <NavigationMenuList className="flex space-x-4 md:space-x-8">
             {/* <NavigationMenuItem>
               <NavigationMenuLink href="/parents-hub">
                 <p
@@ -62,11 +62,7 @@ export default function NavBar() {
             </NavigationMenuItem> */}
             {/* <NavigationMenuItem>
               <NavigationMenuLink href="/blog">
-                <p
-                  className={`text-lg ${textColor}`}
-                >
-                  Blog
-                </p>
+                <p className={`text-lg ${textColor}`}>Blog</p>
               </NavigationMenuLink>
             </NavigationMenuItem> */}
             <NavigationMenuItem>

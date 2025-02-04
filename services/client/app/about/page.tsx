@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/core-ui/card'
 import Image from 'next/image'
 export default function AboutPage() {
   return (
-    <div className="mx-auto pt-20 md:pt-24">
+    <div className="mx-auto pt-24">
       {/* <div className="relative w-full overflow-hidden h-96 md:h-screen">
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black bg-opacity-50 z-5"></div>
       </div> */}
 
-      <div className="max-w-4xl mx-auto px-6 py-12">
+      <div className="max-w-4xl mx-auto px-6 pb-12">
         <Card className="mb-8 bg-white">
           <CardContent className="p-6">
             <div className="md:grid md:grid-cols-2 md:items-center md:justify-center gap-8">
