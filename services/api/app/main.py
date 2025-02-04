@@ -1,5 +1,4 @@
 from fastapi import FastAPI, APIRouter
-from fastapi.staticfiles import StaticFiles
 from starlette.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from sqlmodel import Session
@@ -29,7 +28,6 @@ api_router = APIRouter()
 api_router.include_router(email.router, prefix="/email", tags=["Email"])
 
 app.include_router(api_router, prefix="/v1")
-app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 @app.get("/")
