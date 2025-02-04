@@ -3,7 +3,10 @@ import Image from 'next/image'
 import { Button } from '../core-ui/button'
 export default function BlogFeatured() {
   return (
-    <div className="bg-white rounded-xl flex flex-col md:flex-row w-full gap-0">
+    <div className="bg-white rounded-xl flex flex-col md:flex-row w-full gap-0 relative">
+      <p className="absolute top-0 right-0 bg-primary text-white px-2 py-1 rounded-bl-xl">
+        Featured Post
+      </p>
       <div className="w-full md:w-1/2">
         <Image
           src="/images/generated/fam-1.webp"
@@ -16,7 +19,7 @@ export default function BlogFeatured() {
       <div className="w-full md:w-1/2 flex justify-center items-center p-10 md:p-20">
         <div>
           <p className="text-gray-500 text-sm">February 4, 2025</p>
-          <h2 className="text-tertiary my-2">The Power of Compounding</h2>
+          <h2 className="my-2">The Power of Compounding</h2>
           <p className="text-gray-500 text-sm mb-1">Greg Cuesta</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do

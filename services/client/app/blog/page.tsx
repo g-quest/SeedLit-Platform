@@ -1,12 +1,14 @@
 import { Card, CardContent } from '@/components/core-ui/card'
 import BlogFeatured from '@/components/blog/Featured'
 import BlogArticleCard from '@/components/blog/ArticleCard'
-
+import { Button } from '@/components/core-ui/button'
+import { Separator } from '@/components/core-ui/separator'
 const posts = [
   {
     id: 1,
     title: 'My First Post',
-    description: 'This is the description of my first post. It is a long description that is a bit longer than the others.',
+    description:
+      'This is the description of my first post. It is a long description that is a bit longer than the others.',
     slug: 'my-first-post',
     image: '/images/generated/fam-4.webp',
     author: 'Greg Cuesta',
@@ -48,14 +50,24 @@ const posts = [
     author: 'Greg Cuesta',
     date: 'Feb 5, 2025',
   },
+  {
+    id: 6,
+    title: 'My Fifth Post',
+    description: 'This is the description of my fifth post',
+    slug: 'my-fifth-post',
+    image: '/images/generated/fam-4.webp',
+    author: 'Greg Cuesta',
+    date: 'Feb 5, 2025',
+  },
 ]
 
 export default function Blog() {
   return (
-    <div className="mx-auto pt-24 p-8 px-4 max-w-[1200px] mx-auto">
-      <div className="mb-14">
+    <div className="pt-24 p-8 px-4 max-w-[1200px] mx-auto">
+      <div>
         <BlogFeatured />
       </div>
+      <Separator className="bg-gray-300 mt-12 mb-6" />
       <div>
         <h2 className="text-center mb-8">Latest Posts</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4 lg:gap-6">
