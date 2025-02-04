@@ -2,8 +2,8 @@ import { Card, CardContent } from '@/components/core-ui/card'
 import Image from 'next/image'
 export default function AboutPage() {
   return (
-    <div className="mx-auto">
-      <div className="relative w-full overflow-hidden h-96 md:h-screen">
+    <div className="mx-auto pt-20 md:pt-24">
+      {/* <div className="relative w-full overflow-hidden h-96 md:h-screen">
         <video
           className="absolute inset-0 w-full h-full object-cover"
           autoPlay
@@ -14,7 +14,7 @@ export default function AboutPage() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Overlay Content */}
+
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center mt-8 md:mt-0">
           <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold drop-shadow-lg">
             Made for Parents,
@@ -24,12 +24,11 @@ export default function AboutPage() {
           </h1>
         </div>
 
-        {/* Overlay for Text Contrast */}
         <div className="absolute inset-0 bg-black bg-opacity-50 z-5"></div>
-      </div>
+      </div> */}
 
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <Card className="mb-8">
+        <Card className="mb-8 bg-white">
           <CardContent className="p-6">
             <div className="md:grid md:grid-cols-2 md:items-center md:justify-center gap-8">
               <Image
@@ -40,7 +39,9 @@ export default function AboutPage() {
                 className="w-full mb-4 md:mb-0 rounded-lg"
               />
               <div>
-                <h2 className="text-2xl font-semibold mb-4">How It Started</h2>
+                <h2 className="text-tertiary text-2xl font-semibold mb-4">
+                  How It Started
+                </h2>
                 <p className="text-gray-700 leading-relaxed">
                   SeedLit was born from a moment of reflection—one that many new
                   parents experience. As my wife and I prepared to welcome our
@@ -65,9 +66,9 @@ export default function AboutPage() {
           </CardContent>
         </Card>
 
-        <Card className="mb-8">
+        <Card className="mb-8 bg-white">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">
+            <h2 className="text-tertiary text-2xl font-semibold mb-4">
               Aiming to Build a Community
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -95,9 +96,9 @@ export default function AboutPage() {
           </CardContent>
         </Card>
 
-        <Card className="mb-8">
+        <Card className="mb-8 bg-white">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">
+            <h2 className="text-tertiary text-2xl font-semibold mb-4">
               {' '}
               🌱 What's in a Name?
             </h2>
@@ -130,9 +131,11 @@ export default function AboutPage() {
           </CardContent>
         </Card>
 
-        <Card className="mb-8">
+        <Card className="mb-8 bg-white">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
+            <h2 className="text-tertiary text-2xl font-semibold mb-4">
+              Our Mission
+            </h2>
             <p className="text-gray-700 leading-relaxed">
               At SeedLit, our mission is to
               <strong>

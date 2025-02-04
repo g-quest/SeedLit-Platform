@@ -8,14 +8,41 @@ import {
 } from '@/components/core-ui/navigation-menu'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 export default function NavBar() {
   const pathname = usePathname()
-  const whitePaths = ['/', '/about']
+  const whitePaths = ['/']
   const makeWhite = whitePaths.includes(pathname)
 
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  const backgroundColor = makeWhite
+    ? scrolled
+      ? 'bg-white'
+      : 'bg-transparent'
+    : 'bg-white'
+  const textColor = makeWhite
+    ? scrolled
+      ? 'text-black'
+      : 'text-white'
+    : 'text-black'
+
   return (
-    <div className="bg-transparent p-4 border-b border-border absolute top-0 z-50 w-full">
+    <div
+      className={`py-2 px-4 md:p-4 border-b border-border fixed top-0 z-50 w-full transition-all duration-300 ${backgroundColor}`}
+    >
       <div className="max-w-[1200px] mx-auto flex w-full justify-between items-center">
         <div className="logo">
           <Link href="/">
@@ -27,7 +54,7 @@ export default function NavBar() {
             {/* <NavigationMenuItem>
               <NavigationMenuLink href="/parents-hub">
                 <p
-                  className={`text-lg ${makeWhite ? 'text-white' : 'text-black'}`}
+                  className={`text-lg ${textColor}`}
                 >
                   Parents Hub
                 </p>
@@ -36,7 +63,7 @@ export default function NavBar() {
             {/* <NavigationMenuItem>
               <NavigationMenuLink href="/blog">
                 <p
-                  className={`text-lg ${makeWhite ? 'text-white' : 'text-black'}`}
+                  className={`text-lg ${textColor}`}
                 >
                   Blog
                 </p>
@@ -44,11 +71,7 @@ export default function NavBar() {
             </NavigationMenuItem> */}
             <NavigationMenuItem>
               <NavigationMenuLink href="/about">
-                <p
-                  className={`text-lg ${makeWhite ? 'text-white' : 'text-black'}`}
-                >
-                  About
-                </p>
+                <p className={`text-lg ${textColor}`}>About</p>
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
