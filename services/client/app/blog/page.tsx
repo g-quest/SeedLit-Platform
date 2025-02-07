@@ -69,12 +69,15 @@ export default function Blog() {
       </div>
       <Separator className="bg-gray-300 mt-12 mb-6" />
       <div>
-        <h2 className="text-center mb-8">Latest Posts</h2>
+        <h2 className="text-center mb-8">Latest Articles</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4 lg:gap-6">
           {posts.map((post) => (
             <BlogArticleCard key={post.id} post={post} />
           ))}
         </div>
+      </div>
+      <div className="flex justify-center mt-8">
+        <Button className="bg-tertiary">View All</Button>
       </div>
     </div>
   )

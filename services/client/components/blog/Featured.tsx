@@ -4,7 +4,7 @@ import { Button } from '../core-ui/button'
 export default function BlogFeatured() {
   return (
     <div className="bg-white rounded-xl flex flex-col md:flex-row w-full gap-0 relative">
-      <p className="absolute top-0 right-0 bg-primary text-white px-2 py-1 rounded-bl-xl">
+      <p className="absolute top-0 right-0 bg-primary text-white px-2 py-1 rounded-bl-xl rounded-tr-xl">
         Featured Post
       </p>
       <div className="w-full md:w-1/2">
