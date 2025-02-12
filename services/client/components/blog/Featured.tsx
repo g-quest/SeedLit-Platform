@@ -1,38 +1,47 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '../core-ui/button'
-export default function BlogFeatured() {
+export default function BlogFeatured({ featuredArticle }) {
+  // console.log('FEATURED ARTICLE: ', featuredArticle)
+
+  const { slug, image, author, publishingDate, title, shortDescription } =
+    featuredArticle
+
+  const imageURL = image.fields.file.url
+  const date = new Date(publishingDate).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  })
+
   return (
-    <div className="bg-white rounded-xl flex flex-col md:flex-row w-full gap-0 relative">
-      <p className="absolute top-0 right-0 bg-primary text-white px-2 py-1 rounded-bl-xl rounded-tr-xl">
-        Featured Post
-      </p>
-      <div className="w-full md:w-1/2">
-        <Image
-          src="/images/generated/fam-1.webp"
-          alt="Featured Post"
-          className="w-full h-full object-cover rounded-tl-xl rounded-tr-xl md:rounded-bl-xl md:rounded-tr-none"
-          width={500}
-          height={500}
-        />
-      </div>
-      <div className="w-full md:w-1/2 flex justify-center items-center p-10 md:p-20">
-        <div>
-          <p className="text-gray-500 text-sm">February 4, 2025</p>
-          <h2 className="my-2">The Power of Compounding</h2>
-          <p className="text-gray-500 text-sm mb-1">Greg Cuesta</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            http://localhost:3000/_next/image?url=%2Fimages%2Fgenerated%2Ffam-1.webp&w=640&q=75
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <div className="mt-4">
-            <Button asChild className="bg-secondary text-white">
-              <Link href="/blog/post-1">Read More</Link>
-            </Button>
+    <Link href={`/blog/article/${slug}`}>
+      <div className="bg-white rounded-xl flex flex-col md:flex-row w-full gap-0 relative">
+        <p className="absolute top-0 right-0 bg-primary text-white px-2 py-1 rounded-bl-xl rounded-tr-xl">
+          Featured Post
+        </p>
+        <div className="relative w-full md:w-1/2 pb-[50%]">
+          <Image
+            src={`https:${imageURL}`}
+            alt="Featured Post Image"
+            className="w-full h-full object-cover rounded-tl-xl rounded-tr-xl md:rounded-bl-xl md:rounded-tr-none"
+            fill
+            sizes="(max-width: 768px) 100vw, 100vw"
+            priority
+          />
+        </div>
+        <div className="w-full md:w-1/2 flex justify-center items-center p-10 md:p-20">
+          <div className="w-full">
+            <p className="text-gray-500 text-sm">{date}</p>
+            <h2 className="my-2">{title}</h2>
+            <p className="text-gray-500 text-sm mb-1">{author}</p>
+            <p className="w-full">{shortDescription}</p>
+            <div className="mt-4">
+              <Button className="bg-secondary text-white">Read More</Button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
