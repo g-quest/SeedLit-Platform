@@ -21,6 +21,17 @@ export async function generateMetadata({ params }) {
 
   const { title, shortDescription, image } = article.items[0].fields
 
+  const imageURL =
+    image &&
+    typeof image === 'object' &&
+    'fields' in image &&
+    typeof image.fields === 'object' &&
+    'file' in image.fields &&
+    typeof image.fields.file === 'object' &&
+    'url' in image.fields.file
+      ? image.fields.file.url
+      : ''
+
   return {
     title: `${title} | SeedLit`,
     description: shortDescription,
@@ -31,7 +42,7 @@ export async function generateMetadata({ params }) {
       siteName: `${title} | SeedLit`,
       images: [
         {
-          url: `https://${image.fields.file.url}`,
+          url: `https:${imageURL}`,
         },
       ],
     },
@@ -41,7 +52,7 @@ export async function generateMetadata({ params }) {
       site: `${title} | SeedLit`,
       images: [
         {
-          url: `https://${image.fields.file.url}`,
+          url: `https:${imageURL}`,
         },
       ],
     },
