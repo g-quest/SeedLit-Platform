@@ -10,6 +10,9 @@ FROM node:20 AS build
 LABEL project=seedlit
 ARG API
 ARG NEXT_PUBLIC_API
+ARG CONTENTFUL_SPACE
+ARG CONTENTFUL_ENVIRONMENT
+ARG CONTENTFUL_ACCESS_TOKEN
 USER node
 WORKDIR /usr/src/app
 COPY --from=base --chown=root:root /usr/src/app/node_modules ./node_modules
