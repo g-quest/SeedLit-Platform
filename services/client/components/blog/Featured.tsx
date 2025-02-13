@@ -1,5 +1,7 @@
+'use client'
+
 import Link from 'next/link'
-import Image from 'next/image'
+import Image, { ImageLoader, ImageLoaderProps } from 'next/image'
 import { Button } from '../core-ui/button'
 export default function BlogFeatured({ featuredArticle }) {
   // console.log('FEATURED ARTICLE: ', featuredArticle)
@@ -8,6 +10,11 @@ export default function BlogFeatured({ featuredArticle }) {
     featuredArticle
 
   const imageURL = image.fields.file.url
+
+  const contentfulImageLoader: ImageLoader = ({ src }: ImageLoaderProps) => {
+    return `${src}`
+  }
+
   const date = new Date(publishingDate).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
@@ -23,6 +30,7 @@ export default function BlogFeatured({ featuredArticle }) {
         </p>
         <div className="relative w-full md:w-1/2 pb-[50%]">
           <Image
+            loader={contentfulImageLoader}
             src={`https:${imageURL}`}
             alt="Featured Post Image"
             className="w-full h-full object-cover rounded-tl-xl rounded-tr-xl md:rounded-bl-xl md:rounded-tr-none"

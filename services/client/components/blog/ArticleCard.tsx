@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
+import Image, { ImageLoader, ImageLoaderProps } from 'next/image'
 import { usePathname } from 'next/navigation'
 
 export default function BlogArticleCard({ article }) {
@@ -18,6 +18,11 @@ export default function BlogArticleCard({ article }) {
   } = article.fields
 
   const imageURL = image.fields.file.url
+
+  const contentfulImageLoader: ImageLoader = ({ src }: ImageLoaderProps) => {
+    return `${src}`
+  }
+
   const date = new Date(publishingDate).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
@@ -36,6 +41,7 @@ export default function BlogArticleCard({ article }) {
           </p>
         )}
         <Image
+          loader={contentfulImageLoader}
           src={`https:${imageURL}`}
           alt={title}
           width={500}
