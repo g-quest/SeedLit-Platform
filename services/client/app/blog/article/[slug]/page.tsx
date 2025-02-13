@@ -64,7 +64,8 @@ export default async function BlogPost({ params }) {
   const article = await getArticleBySlug(slug)
   // console.log('ARTICLE: ', article)
 
-  const { title } = article.items[0].fields
+  const { author, title, image, publishingDate, content } =
+    article.items[0].fields
 
   if (article.items.length === 0) {
     notFound()
@@ -90,10 +91,14 @@ export default async function BlogPost({ params }) {
         </BreadcrumbList>
       </Breadcrumb>
       <div className="mb-8">
-        <BlogArticleHeader article={article} />
+        <BlogArticleHeader image={image} title={title} />
       </div>
       <div className="mb-8">
-        <BlogArticleContent article={article} />
+        <BlogArticleContent
+          author={author}
+          publishingDate={publishingDate}
+          content={content}
+        />
       </div>
       <div className="mb-12 text-center bg-secondary p-6 rounded-lg shadow-xl">
         <h2 className="mb-4">Like what you read?</h2>

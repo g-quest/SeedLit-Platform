@@ -4,9 +4,8 @@ import Image from 'next/image'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
-export default function BlogArticleContent({ article }) {
-  const { content, author, publishingDate, title, shortDescription } =
-    article.items[0].fields
+export default function BlogArticleContent(props) {
+  const { content, author, publishingDate } = props
 
   const date = new Date(publishingDate).toLocaleDateString('en-US', {
     year: 'numeric',
@@ -129,7 +128,7 @@ export default function BlogArticleContent({ article }) {
         <p className="mb-1">{date}</p>
         {author && <p>By {author}</p>}
       </div>
-      <div className=" ">{documentToReactComponents(content, options)}</div>
+      <div>{documentToReactComponents(content, options)}</div>
     </div>
   )
 }

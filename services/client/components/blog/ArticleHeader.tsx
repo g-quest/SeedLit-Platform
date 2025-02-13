@@ -1,16 +1,9 @@
 'use client'
 
 import Image from 'next/image'
-export default function BlogArticleHeader({ article }) {
-  const { cornerTag, image, author, publishingDate, title, shortDescription } =
-    article.items[0].fields
-
+export default function BlogArticleHeader(props) {
+  const { image, title } = props
   const imageURL = image.fields.file.url
-  const date = new Date(publishingDate).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  })
 
   return (
     <div className="bg-white rounded-xl flex flex-col md:flex-row gap-0 relative shadow-xl">
