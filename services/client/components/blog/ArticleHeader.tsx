@@ -1,16 +1,26 @@
-import Image from 'next/image'
+'use client'
+
+import Image, { ImageLoader, ImageLoaderProps } from 'next/image'
 export default function BlogArticleHeader(props) {
   const { image, title } = props
   const imageURL = image.fields.file.url
+
+  const contentfulImageLoader: ImageLoader = ({ src }: ImageLoaderProps) => {
+    return `${src}`
+  }
 
   return (
     <div className="bg-white rounded-xl flex flex-col md:flex-row gap-0 relative shadow-xl">
       {/* Background Image */}
       <div className="relative w-full pb-[56.25%] rounded-xl">
-        <img
+        <Image
+          loader={contentfulImageLoader}
           src={`https:${imageURL}`}
           alt="Article Image"
           className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
+          fill
+          sizes="(max-width: 768px) 100vw, 100vw"
+          priority
         />
       </div>
 
