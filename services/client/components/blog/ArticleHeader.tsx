@@ -1,6 +1,6 @@
-import Link from 'next/link'
+'use client'
+
 import Image from 'next/image'
-import { Button } from '../core-ui/button'
 export default function BlogArticleHeader({ article }) {
   const { cornerTag, image, author, publishingDate, title, shortDescription } =
     article.items[0].fields

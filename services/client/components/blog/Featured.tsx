@@ -13,6 +13,7 @@ export default function BlogFeatured({ featuredArticle }) {
     month: 'short',
     day: 'numeric',
   })
+  // console.log('IMAGE URL: ', imageURL)
 
   return (
     <Link href={`/blog/article/${slug}`}>

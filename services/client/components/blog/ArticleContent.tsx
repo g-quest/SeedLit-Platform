@@ -101,7 +101,7 @@ export default function BlogArticleContent({ article }) {
         if (contentType.includes('image')) {
           return (
             <Image
-              src={`${url}?fm=avif&w=1040`}
+              src={url}
               fill
               sizes="(max-width: 600px) 480px,
                    (max-width: 900px) 800px,
