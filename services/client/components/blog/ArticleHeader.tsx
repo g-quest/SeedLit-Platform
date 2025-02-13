@@ -13,7 +13,7 @@ export default function BlogArticleHeader({ article }) {
   })
 
   return (
-    <div className="bg-white rounded-xl flex flex-col md:flex-row gap-0 relative">
+    <div className="bg-white rounded-xl flex flex-col md:flex-row gap-0 relative shadow-xl">
       {/* Background Image */}
       <div className="relative w-full pb-[56.25%] rounded-xl">
         <Image

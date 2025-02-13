@@ -124,10 +124,10 @@ export default function BlogArticleContent({ article }) {
   }
 
   return (
-    <div className="bg-white rounded-xl p-6 md:p-12">
+    <div className="bg-white rounded-xl p-6 md:p-12 shadow-xl">
       <div className="text-gray-500 text-sm mb-4">
-        <p>{date}</p>
-        <p>By {author}</p>
+        <p className="mb-1">{date}</p>
+        {author && <p>By {author}</p>}
       </div>
       <div className=" ">{documentToReactComponents(content, options)}</div>
     </div>

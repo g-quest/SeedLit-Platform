@@ -60,11 +60,11 @@ export default function NavBar() {
                 </p>
               </NavigationMenuLink>
             </NavigationMenuItem> */}
-            {/* <NavigationMenuItem>
+            <NavigationMenuItem>
               <NavigationMenuLink href="/blog">
                 <p className={`text-lg ${textColor}`}>Blog</p>
               </NavigationMenuLink>
-            </NavigationMenuItem> */}
+            </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink href="/about">
                 <p className={`text-lg ${textColor}`}>About</p>

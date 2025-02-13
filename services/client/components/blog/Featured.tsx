@@ -17,8 +17,8 @@ export default function BlogFeatured({ featuredArticle }) {
   return (
     <Link href={`/blog/article/${slug}`}>
       <div className="bg-white rounded-xl flex flex-col md:flex-row w-full gap-0 relative">
-        <p className="absolute top-0 right-0 bg-primary text-white px-2 py-1 rounded-bl-xl rounded-tr-xl">
-          Featured Post
+        <p className="absolute z-10 top-0 right-0 bg-primary text-white px-2 py-1 rounded-bl-xl rounded-tr-xl">
+          Featured Article
         </p>
         <div className="relative w-full md:w-1/2 pb-[50%]">
           <Image
@@ -32,12 +32,12 @@ export default function BlogFeatured({ featuredArticle }) {
         </div>
         <div className="w-full md:w-1/2 flex justify-center items-center p-10 md:p-20">
           <div className="w-full">
-            <p className="text-gray-500 text-sm">{date}</p>
+            {/* <p className="text-gray-500 text-sm">{date}</p> */}
             <h2 className="my-2">{title}</h2>
-            <p className="text-gray-500 text-sm mb-1">{author}</p>
+            {/* <p className="text-gray-500 text-sm mb-1">{author}</p> */}
             <p className="w-full">{shortDescription}</p>
             <div className="mt-4">
-              <Button className="bg-secondary text-white">Read More</Button>
+              <Button className="bg-secondary text-white">View Article</Button>
             </div>
           </div>
         </div>
