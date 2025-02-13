@@ -1,8 +1,4 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // images: {
-  //   domains: ['images.ctfassets.net'],
-  // },
+module.exports = {
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
@@ -13,5 +9,3 @@ const nextConfig = {
     ],
   },
 }
-
-export default nextConfig
