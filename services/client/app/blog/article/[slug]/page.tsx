@@ -78,10 +78,10 @@ export default async function BlogPost({ params }) {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <div className="mb-6">
+      <div className="mb-8">
         <BlogArticleHeader article={article} />
       </div>
-      <div className="mb-12 ">
+      <div className="mb-8">
         <BlogArticleContent article={article} />
       </div>
       <div className="mb-12 text-center bg-secondary p-6 rounded-lg shadow-xl">
