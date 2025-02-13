@@ -7,13 +7,10 @@ export default function BlogArticleHeader(props) {
     <div className="bg-white rounded-xl flex flex-col md:flex-row gap-0 relative shadow-xl">
       {/* Background Image */}
       <div className="relative w-full pb-[56.25%] rounded-xl">
-        <Image
+        <img
           src={`https:${imageURL}`}
           alt="Article Image"
           className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
-          fill
-          sizes="(max-width: 768px) 100vw, 100vw"
-          priority
         />
       </div>
 
