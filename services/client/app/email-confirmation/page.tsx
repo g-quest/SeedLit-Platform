@@ -2,7 +2,7 @@
 
 import { useSearchParams } from 'next/navigation'
 import { useState } from 'react'
-import { useAuth } from '@/context/AuthProvider'
+import { useAuth } from '@/context/useAuth'
 import { Button } from '@/components/core-ui/button'
 import { Alert } from '@/components/core-ui/alert'
 
