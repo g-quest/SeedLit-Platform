@@ -9,4 +9,4 @@ COPY ./app /code/app
 # https://github.com/encode/uvicorn/discussions/1893
 ENV PYTHONPATH "/"
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "3001", "--reload"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

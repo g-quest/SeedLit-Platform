@@ -1,21 +1,14 @@
-import { createServerClient, createBrowserClient } from '@supabase/ssr'
-import { cookies } from 'next/headers'
+import { createBrowserClient } from '@supabase/ssr'
 
-// Server-side Supabase client (used in server components & middleware)
-export async function createSupabaseServerClient() {
-  const cookieMethods = await cookies()
+// Validate environment variables
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
+const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-  return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    { cookies: cookieMethods },
-  )
+if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+  throw new Error('Supabase URL and Anon Key must be set in .env.local')
 }
 
-// Client-side Supabase client (used in React components)
+// 🔹 Client-side Supabase client (ONLY for React components)
 export function createSupabaseBrowserClient() {
-  return createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-  )
+  return createBrowserClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 }

@@ -30,8 +30,8 @@ npm run dev
 #### Services should be accessable here
 
 Client: http://localhost:3000
-API: http://localhost:3001
-API Docs: http://localhost:3001/docs
+API: http://localhost:8000
+API Docs: http://localhost:8000/docs
 
 #### To remove all containers, images, volumes, and client build when necessary:
 
