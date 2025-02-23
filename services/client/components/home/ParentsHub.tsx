@@ -31,8 +31,8 @@ export default function HomeParentsHub() {
   }, [])
 
   return (
-    <Section>
-      <div className="max-w-[1200px] pt-5 pb-[4rem] md:py-[4rem]">
+    <div className="bg-secondary px-6 py-6 md:py-16 min-h-screen flex flex-col justify-center items-center">
+      <div className="bg-accent rounded-2xl mx-auto lg:max-w-[1200px] py-[3.25rem] lg:py-[6.25rem] gap-10 lg:gap-2 shadow-lg px-8 md:px-6">
         <h2 className="text-center mb-6">Parenting as a Community</h2>
         <p className="text-lg text-center mb-8 md:mb-8 md:w-[600px] mx-auto text-gray-700">
           The Parents Hub is a vital part of the SeedLit ecosystem, fostering a
@@ -60,7 +60,7 @@ export default function HomeParentsHub() {
               ref={(el) => {
                 cardRefs.current[index] = el
               }}
-              className="bg-white relative animate-scale shadow-lg max-w-[350px] md:max-w-full mx-auto rounded-tl-xl rounded-tr-xl"
+              className="bg-quaternary relative animate-scale shadow-lg max-w-[350px] md:max-w-full mx-auto rounded-xl"
             >
               <div className="relative">
                 <Image
@@ -95,6 +95,6 @@ export default function HomeParentsHub() {
           </Button>
         </div> */}
       </div>
-    </Section>
+    </div>
   )
 }

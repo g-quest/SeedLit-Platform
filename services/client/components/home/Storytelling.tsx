@@ -46,16 +46,16 @@ export default function HomeStorytelling() {
           <h2 className="mb-6 text-center">
             Transforming Big Ideas into Magical Stories
           </h2>
-          <p className="text-lg text-gray-700 mb-5 text-center">
+          <p className="text-lg text-gray-700 mb-10 text-center">
             SeedLit transforms impactful lessons into imaginative,
             age-appropriate stories for children. These stories are designed to
             nurture curiosity, resilience, and empathy, making complex ideas
             approachable and fun for young minds.
           </p>
           {/* Key Points */}
-          <div className="space-y-12 text-center mx-auto border border-slate-200 p-8 rounded-2xl shadow-gray-300 shadow-lg">
+          <div className="bg-quaternary space-y-12 text-center mx-auto border border-slate-200 p-8 rounded-2xl shadow-gray-300 shadow-lg">
             <div>
-              <h3 className="mb-5 text-tertiary">Multi-Source Inspiration</h3>
+              <h3 className="mb-5">Multi-Source Inspiration</h3>
               <div>
                 <ul className="list-disc pl-6 text-left">
                   <li>
@@ -84,7 +84,7 @@ export default function HomeStorytelling() {
             </div>
 
             <div>
-              <h3 className="mb-5 text-tertiary">Engaging & Relatable</h3>
+              <h3 className="mb-5">Engaging & Relatable</h3>
               <div>
                 <p>
                   Every story is written to captivate children while providing
@@ -95,7 +95,7 @@ export default function HomeStorytelling() {
             </div>
 
             <div>
-              <h3 className="mb-5 text-tertiary">Playful & Accessible</h3>
+              <h3 className="mb-5">Playful & Accessible</h3>
               <div>
                 <p>
                   Big ideas are presented in ways that resonate with children's

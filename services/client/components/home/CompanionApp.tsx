@@ -31,17 +31,17 @@ export default function HomeCompanionApp() {
       {/* Left Side: Scrolling Text (Full View on Mobile) */}
       <div className="w-full md:w-1/2 px-6 md:px-8 py-12 md:py-16 space-y-8 flex flex-col justify-center items-center">
         <div className="max-w-[550px]">
-          <h2 className="mb-6 text-center">Unlock the Magic of Parenting</h2>
-          <p className="text-lg text-gray-700 mb-5 lg:mb-4 text-center">
+          <h2 className="mb-6 text-center">Turn Pages, Create Memories</h2>
+          <p className="text-lg text-gray-700 mb-10 text-center">
             The Parent Companion App enriches the reading journey and empowers
             parents with tools to animate SeedLit stories alongside their
             children.
           </p>
 
           {/* Key Points */}
-          <div className="space-y-12 text-center mx-auto border border-slate-200 p-8 rounded-2xl shadow-gray-300 shadow-lg">
+          <div className="bg-quaternary space-y-12 text-center mx-auto border border-slate-200 p-8 rounded-2xl shadow-gray-300 shadow-lg">
             <div>
-              <h3 className="mb-5 text-tertiary">Guided Reading Experience</h3>
+              <h3 className="mb-5">Guided Reading Experience</h3>
               <div>
                 <p>
                   Engage in meaningful discussions with thoughtful questions
@@ -53,9 +53,7 @@ export default function HomeCompanionApp() {
             </div>
 
             <div>
-              <h3 className="mb-5 text-tertiary">
-                Comprehensive Topic Coverage
-              </h3>
+              <h3 className="mb-5">Comprehensive Topic Coverage</h3>
               <div>
                 <p>
                   The Parent Companion App breaks down big ideas like
@@ -66,7 +64,7 @@ export default function HomeCompanionApp() {
             </div>
 
             <div>
-              <h3 className="mb-5 text-tertiary">Interactive Chat Support</h3>
+              <h3 className="mb-5">Interactive Chat Support</h3>
               <div>
                 <p>
                   Use the app to inquire about stories or topics, receiving
@@ -77,7 +75,7 @@ export default function HomeCompanionApp() {
             </div>
 
             <div>
-              <h3 className="mb-5 text-tertiary">Ease of Use</h3>
+              <h3 className="mb-5">Ease of Use</h3>
               <div>
                 <p>
                   Designed for quick and easy access during or after reading

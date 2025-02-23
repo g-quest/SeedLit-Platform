@@ -41,7 +41,14 @@ export default function HomeHero() {
 
       {/* Overlay Content */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center min-h-[500px]">
-        <h1 className="text-white text-6xl lg:text-8xl font-bold drop-shadow-lg">
+        <Image
+          src="/images/wordmark.png"
+          alt="SeedLit"
+          width={400}
+          height={400}
+          className="mb-5 w-[250px] md:w-[300px] lg:w-[400px]"
+        />
+        <h1 className="text-white text-5xl md:text-6xl lg:text-8xl font-bold drop-shadow-lg">
           Big Ideas, Little Minds
         </h1>
         <p className="text-gray-200 text-xl lg:text-3xl max-w-[400px] lg:max-w-[600px] pt-2 md:pt-4 drop-shadow-md">

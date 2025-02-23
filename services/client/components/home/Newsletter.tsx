@@ -32,8 +32,9 @@ export default function HomeNewsletter() {
   return (
     <Section>
       <div className="lg:max-w-[1200px] px-5 lg:px-10 text-center">
-        <div className="bg-secondary py-8 px-6 rounded-lg shadow-xl mb-[3rem]">
-          <p className="text-lg mb-5 max-w-[500px] mx-auto">
+        <div className="bg-tertiary py-8 px-6 rounded-lg shadow-xl mb-[3rem]">
+          <h2 className="text-white">Release Timeline</h2>
+          <p className="text-white text-lg mt-3 mb-5 max-w-[500px] mx-auto">
             Exciting features are on the horizon, set to launch in the upcoming
             quarters!
           </p>
@@ -53,8 +54,8 @@ export default function HomeNewsletter() {
                       {index === 0
                         ? 'Coming Soon!'
                         : index === 1
-                          ? 'Q2 2025'
-                          : 'Q3 2025'}
+                          ? 'Q3 2025'
+                          : 'Q4 2025'}
                     </p>
                   </div>
                 </div>
@@ -65,7 +66,7 @@ export default function HomeNewsletter() {
 
         <div className="bg-white py-8 px-6 rounded-lg shadow-xl">
           <h2>Join Our Newsletter</h2>
-          <p className="text-lg text-gray-700 my-5 max-w-[500px] mx-auto">
+          <p className="text-lg text-gray-700 mt-3 mb-5 max-w-[500px] mx-auto">
             Subscribe to our newsletter to get the latest news, stories, and
             updates from SeedLit.
           </p>

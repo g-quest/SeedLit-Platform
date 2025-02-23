@@ -9,6 +9,7 @@ import {
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 export default function NavBar() {
   const pathname = usePathname()
@@ -46,7 +47,12 @@ export default function NavBar() {
       <div className="max-w-[1200px] mx-auto flex w-full justify-between items-center">
         <div className="logo">
           <Link href="/">
-            <h4 className="text-3xl font-bold text-tertiary">SeedLit</h4>
+            <Image
+              src="/images/wordmark.png"
+              alt="SeedLit"
+              width={75}
+              height={75}
+            />
           </Link>
         </div>
         <NavigationMenu>

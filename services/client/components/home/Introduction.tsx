@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
-import Section from '@/components/ui/Section'
 
 export default function HomeIntroduction() {
   const imageRef = useRef<HTMLImageElement>(null)
@@ -28,8 +27,8 @@ export default function HomeIntroduction() {
   }, [])
 
   return (
-    <Section>
-      <div className="rounded-2xl bg-white mx-auto lg:max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 lg:items-center lg:justify-center py-[3.25rem] lg:py-[6.25rem] gap-10 lg:gap-2 lg:mt-[100px] border border-slate-200 shadow-gray-300 shadow-lg md:px-6">
+    <div className="bg-white p-8 min-h-screen flex flex-col justify-center items-center">
+      <div className="bg-accent rounded-2xl mx-auto lg:max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 lg:items-center lg:justify-center py-[3.25rem] lg:py-[6.25rem] gap-10 lg:gap-2 border border-slate-200 shadow-gray-300 shadow-lg md:px-6">
         <div
           ref={imageRef}
           className="mx-auto order-2 lg:order-1 relative animate-scale "
@@ -51,6 +50,6 @@ export default function HomeIntroduction() {
           </p>
         </div>
       </div>
-    </Section>
+    </div>
   )
 }
