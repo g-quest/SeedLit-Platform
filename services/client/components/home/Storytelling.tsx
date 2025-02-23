@@ -53,7 +53,7 @@ export default function HomeStorytelling() {
             approachable and fun for young minds.
           </p>
           {/* Key Points */}
-          <div className="bg-quaternary space-y-12 text-center mx-auto border border-slate-200 p-8 rounded-2xl shadow-gray-300 shadow-lg">
+          <div className="bg-quaternary space-y-12 text-center mx-auto p-8 rounded-2xl shadow-gray-300 shadow-lg">
             <div>
               <h3 className="mb-5">Multi-Source Inspiration</h3>
               <div>

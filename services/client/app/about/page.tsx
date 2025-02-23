@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/core-ui/card'
 import Image from 'next/image'
 export default function AboutPage() {
   return (
-    <div className="mx-auto pt-24">
+    <div className="mx-auto pt-[8rem] md:pt-[10rem]">
       {/* <div className="relative w-full overflow-hidden h-96 md:h-screen">
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -29,6 +29,25 @@ export default function AboutPage() {
 
       <div className="max-w-4xl mx-auto px-6 pb-12">
         <Card className="mb-8 bg-white">
+          <CardContent className="p-6">
+            <h2 className="text-tertiary text-2xl font-semibold mb-4">
+              Our Mission
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              At SeedLit, our mission is to
+              <strong>
+                {' '}
+                transform big ideas into imaginative, age-appropriate narratives{' '}
+              </strong>
+              that weave meaningful lessons into every story. We aim to inspire
+              young minds while fostering curiosity, resilience, and
+              leadership—equipping both children and parents with tools that
+              carry through their journey together.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* <Card className="mb-8 bg-white">
           <CardContent className="p-6">
             <div className="md:grid md:grid-cols-2 md:items-center md:justify-center gap-8">
               <Image
@@ -64,7 +83,7 @@ export default function AboutPage() {
               </div>
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
 
         <Card className="mb-8 bg-white">
           <CardContent className="p-6">
@@ -96,7 +115,7 @@ export default function AboutPage() {
           </CardContent>
         </Card>
 
-        <Card className="mb-8 bg-white">
+        <Card className="mb-4 md:mb-8 bg-white">
           <CardContent className="p-6">
             <h2 className="text-tertiary text-2xl font-semibold mb-4">
               {' '}
@@ -127,25 +146,6 @@ export default function AboutPage() {
               stories have the power to{' '}
               <strong>plant ideas that grow for a lifetime</strong>—not just for
               children, but for the entire family.
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="mb-8 bg-white">
-          <CardContent className="p-6">
-            <h2 className="text-tertiary text-2xl font-semibold mb-4">
-              Our Mission
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              At SeedLit, our mission is to
-              <strong>
-                {' '}
-                transform big ideas into imaginative, age-appropriate narratives{' '}
-              </strong>
-              that weave meaningful lessons into every story. We aim to inspire
-              young minds while fostering curiosity, resilience, and
-              leadership—equipping both children and parents with tools that
-              carry through their journey together.
             </p>
           </CardContent>
         </Card>

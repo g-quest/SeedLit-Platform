@@ -57,7 +57,7 @@ export default function HomePlatform() {
           className="flex justify-center animate-scale mb-[3rem] md:mb-[4rem]"
         >
           <div className="relative">
-            <div className="bg-secondary w-[275px] h-[275px] md:w-[400px] md:h-[400px] rounded-2xl -translate-x-[0.5rem]" />
+            <div className="bg-secondary w-[275px] h-[275px] md:w-[400px] md:h-[400px] rounded-2xl -translate-x-[0.5rem] shadow-2xl" />
             <Image
               src="/images/generated/fam-4.webp"
               alt="SeedLit"
