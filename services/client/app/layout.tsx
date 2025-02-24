@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 import '@/styles/globals.css'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 import NavBar from '@/components/navigation/NavBar'
 import Footer from '@/components/navigation/Footer'
 import ClientLayout from './ClientLayout'
