@@ -59,21 +59,12 @@ export default function NavBar() {
           <NavigationMenuList className="flex space-x-4 md:space-x-8">
             {/* <NavigationMenuItem>
               <NavigationMenuLink href="/parents-hub">
-                <p
-                  className={`text-lg ${textColor}`}
-                >
-                  Parents Hub
-                </p>
+                <p className={`text-md ${textColor}`}>Parents Hub</p>
               </NavigationMenuLink>
             </NavigationMenuItem> */}
             <NavigationMenuItem>
               <NavigationMenuLink href="/blog">
-                <p className={`text-lg ${textColor}`}>Blog</p>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink href="/about">
-                <p className={`text-lg ${textColor}`}>About</p>
+                <p className={`text-md ${textColor}`}>Blog</p>
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>

@@ -101,7 +101,7 @@ export default function HomeParentsHub() {
                 </h3>
                 <div className="absolute inset-0 bg-black bg-opacity-40 z-5 rounded-tl-xl rounded-tr-xl" />
               </div>
-              <div className="bg-primary py-4 px-2 text-center h-[130px] rounded-bl-xl rounded-br-xl">
+              <div className="bg-quaternary py-4 px-2 text-center h-[130px] rounded-bl-xl rounded-br-xl">
                 <p>
                   {index === 0
                     ? 'Contribute to a collective library of insights, fostering connection and support.'
