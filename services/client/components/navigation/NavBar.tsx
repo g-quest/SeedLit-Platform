@@ -20,7 +20,7 @@ export default function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
+      setScrolled(window.scrollY > 150)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -40,9 +40,11 @@ export default function NavBar() {
       : 'text-white'
     : 'text-black'
 
+  const position = makeWhite ? 'fixed' : 'relative'
+
   return (
     <div
-      className={`p-4 border-b border-border fixed top-0 z-50 w-full transition-all duration-300 ${backgroundColor}`}
+      className={`p-4 border-b border-border ${position} top-0 z-50 w-full transition-all duration-500 ${backgroundColor}`}
     >
       <div className="max-w-[1200px] mx-auto flex w-full justify-between items-center">
         <div className="logo">

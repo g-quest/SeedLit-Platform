@@ -72,7 +72,7 @@ export default async function BlogPost({ params }) {
   }
 
   return (
-    <div className="mt-24 max-w-[62.5rem] mx-auto p-4">
+    <div className="max-w-[1200px] mx-auto px-6 py-4">
       <Breadcrumb className="mb-8">
         <BreadcrumbList>
           <BreadcrumbItem>

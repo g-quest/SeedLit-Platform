@@ -23,7 +23,7 @@ export default async function Blog() {
   // console.log('ARTICLES: ', articles)
 
   return (
-    <div className="pt-24 p-8 px-4 max-w-[1200px] mx-auto">
+    <div className="max-w-[1200px] mx-auto px-6 py-12">
       {featuredArticle && (
         <div>
           <BlogFeatured featuredArticle={featuredArticle} />
