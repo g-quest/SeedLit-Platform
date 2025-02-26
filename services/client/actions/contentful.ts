@@ -39,3 +39,11 @@ export async function getArticleBySlug(slug: string) {
   })
   return response
 }
+
+export async function getLegalDocument(slug: string) {
+  const response = await client.getEntries({
+    content_type: 'legal',
+    'fields.slug': slug,
+  })
+  return response
+}
