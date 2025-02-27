@@ -3,11 +3,12 @@ import Image from 'next/image'
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
+      <h1 className="text-tertiary text-4xl md:text-5xl mb-4 text-center">
+        About SeedLit
+      </h1>
       <Card className="mb-8 bg-white">
         <CardContent className="p-6">
-          <h2 className="text-tertiary text-2xl font-semibold mb-4">
-            Our Mission
-          </h2>
+          <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
           <p className="text-gray-700 leading-relaxed">
             At SeedLit, our mission is to
             <strong>
@@ -24,7 +25,7 @@ export default function AboutPage() {
 
       <Card className="mb-8 bg-white">
         <CardContent className="p-6">
-          <h2 className="text-tertiary text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4">
             Aiming to Build a Community
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -37,10 +38,10 @@ export default function AboutPage() {
           </p>
           <p className="mt-4 text-gray-700">
             That's when SeedLit became more than just books. It's a{' '}
-            <strong>community</strong> for parents who, like me, want to be
-            intentional about raising thoughtful, curious, and resilient kids. A
-            place where we can share insights, ideas, and support as we navigate
-            parenthood together.
+            <strong>community</strong> for parents who want to be intentional
+            about raising thoughtful, curious, and resilient kids. A place where
+            we can share insights, ideas, and support as we navigate parenthood
+            together.
           </p>
           <p className="mt-4 text-gray-700">
             At SeedLit, we believe that learning isn't a one-way street. Parents
@@ -54,10 +55,7 @@ export default function AboutPage() {
 
       <Card className="bg-white">
         <CardContent className="p-6">
-          <h2 className="text-tertiary text-2xl font-semibold mb-4">
-            {' '}
-            🌱 What's in a Name?
-          </h2>
+          <h2 className="text-2xl font-semibold mb-4"> 🌱 What's in a Name?</h2>
           <p className="text-gray-700 leading-relaxed">
             The name <strong>SeedLit</strong> is a fusion of multiple ideas:
           </p>
