@@ -54,10 +54,10 @@ const Footer = () => {
               <Link href="/about">About Us</Link>
             </Button>
             <Button variant="link" className="text-gray-300 p-0" asChild>
-              <Link href="/terms">Terms</Link>
+              <Link href="/terms-and-conditions">Terms</Link>
             </Button>
             <Button variant="link" className="text-gray-300 p-0" asChild>
-              <Link href="/privacy">Privacy</Link>
+              <Link href="/privacy-policy">Privacy</Link>
             </Button>
           </div>
         </div>
