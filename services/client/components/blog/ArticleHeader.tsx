@@ -27,7 +27,7 @@ export default function BlogArticleHeader(props) {
       {/* Title */}
       <div className="absolute top-0 left-0 w-full flex justify-center items-center h-full z-10">
         <div className="text-center">
-          <h1 className=" text-white text-4xl md:text-[4rem] lg:text-[6rem]">
+          <h1 className=" text-white text-4xl md:text-[4rem] lg:text-[6rem] leading-[1]">
             {title}
           </h1>
         </div>

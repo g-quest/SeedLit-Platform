@@ -15,12 +15,12 @@ export default async function Blog() {
       ? featuredPost.fields
       : null
 
-  // console.log('FEATURED ARTICLE: ', featuredArticle)
+  console.log('FEATURED ARTICLE: ', featuredArticle)
 
   const articlesResponse = await getArticles(6)
   const articles = articlesResponse.items
 
-  // console.log('ARTICLES: ', articles)
+  console.log('ARTICLES: ', articles)
 
   return (
     <div className="max-w-[1200px] mx-auto px-6 py-12">
